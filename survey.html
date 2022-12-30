@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>SURVEY</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        
+        <header class="main-header">
+			<nav class="nav main-nav">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+				</ul>
+			</nav>
+		</header>
+        
+        <center><p style="color:#0008ff; font-family: courier new; font-size: 250%;"><u>1.Flight ticket</u></p></center>
+    </head>
+    <center><body bgcolor="#e6ffff">
+            <table border=1px>
+                <tr>
+                    <td bgcolor="#ccf2ff" style="width:300px; color:#0008ff; font-family: courier new;">From/Arrival:  
+                    </td>
+                    <td><select id=htmlArrival style="width:150px; color:#0008ff; font-family: courier new;">
+                    	<option value="asia">Asia</option>
+                    	<option value="europe">Europe</option>
+                        <option value="Anamerica">North America</option>
+                        </select><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ccf2ff" style="width:300px; color:#0008ff; font-family: courier new;">To/Destination: 
+                    </td>
+                    <td><select id=htmlDestination style="width:150px; color:#0008ff; font-family: courier new;">
+                    	<option value="asia">Asia</option>
+                    	<option value="europe">Europe</option>
+                        <option value="namerica">North America</option>
+                        </select><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ccf2ff" style="width:300px; color:#0008ff; font-family: courier new;">How many people are travelling (including yourself)? 
+                    </td>
+                    <td><input type="text" id="htmlPeople" name="htmlPeople" bgcolor="#ccf2ff" style="width:150px; color:#0008ff; font-family: courier new;">
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ccf2ff" style="width:300px; color:#0008ff; font-family: courier new;">Is it a 2 way trip? (Are you returning?)
+                    </td>
+                    <td><select id=htmlTrip style="width:150px; color:#0008ff; font-family: courier new;">
+                    	<option value="2">Yes</option>
+                    	<option value="1">No</option>
+                        </select><br>
+                    </td>
+                </tr>
+            </table>
+            <br><br><br>
+            <button onclick="flight()" style="background-color:#ccf2ff;color:#0008ff; font-family: courier new;">Submit</button>
+            <input type="reset" style="background-color:#ccf2ff;color:#0008ff; font-family: courier new;">
+        
+        <p></p>
+        <div id="flight" bgcolor="#ccf2ff" style="width:300px; color:#0008ff; font-family: courier new;"></div>
+        
+        
+        
+        <p style="color:#0008ff; font-family: courier new; font-size: 250%;"><u>2.Food</u></p>
+        <table border=1px>
+                <tr>
+                    <td bgcolor="#ccf2ff" style="width:300px; color:#0008ff; font-family: courier new;">How many days are you planning on staying?  
+                    </td>
+                    <td><input type="text" id="htmlDays" name="htmlDays" bgcolor="#ccf2ff" style="width:150px; color:#0008ff; font-family: courier new;">
+                    </td>
+                </tr>
+        </table>
+            <br><br><br>
+            <button onclick="meals()" style="background-color:#ccf2ff;color:#0008ff; font-family: courier new;">Submit</button>
+            <input type="reset" style="background-color:#ccf2ff;color:#0008ff; font-family: courier new;">
+        <br><br><br>
+        <table border=1px>
+                <tr>
+                    <td bgcolor="#ccf2ff" style="width:300px; color:#0008ff; font-family: courier new;">Therefore, the total number of meals eaten by one person are
+                    </td>
+                    <td><div id='meals' bgcolor="#ccf2ff" style="width:150px; color:#0008ff; font-family: courier new;"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ccf2ff" style="width:300px; color:#0008ff; font-family: courier new;">How many of those meals are low priced? (McDonalds, Tacobell, etc): 
+                    </td>
+                    <td><input type="text" id="htmlCheap" name="htmlCheap" bgcolor="#ccf2ff" style="width:150px; color:#0008ff; font-family: courier new;">
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ccf2ff" style="width:300px; color:#0008ff; font-family: courier new;">How many of those meals are medium priced? (a normal restaurant): 
+                    </td>
+                    <td><input type="text" id="htmlMedium" name="htmlMedium" bgcolor="#ccf2ff" style="width:150px; color:#0008ff; font-family: courier new;">
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ccf2ff" style="width:300px; color:#0008ff; font-family: courier new;">How many of those meals are expensive? (5 star restaurants): 
+                    </td>
+                    <td><input type="text" id="htmlExp" name="htmlExp" bgcolor="#ccf2ff" style="width:150px; color:#0008ff; font-family: courier new;">
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ccf2ff" style="width:300px; color:#0008ff; font-family: courier new;">How many people are eating?  
+                    </td>
+                    <td><input type="text" id="htmlPpl" name="htmlPpl" bgcolor="#ccf2ff" style="width:150px; color:#0008ff; font-family: courier new;">
+                    </td>
+                </tr>
+            </table>
+        <br><br><br>
+            <button onclick="food()" style="background-color:#ccf2ff;color:#0008ff; font-family: courier new;">Submit</button>
+            <input type="reset" style="background-color:#ccf2ff;color:#0008ff; font-family: courier new;">
+        <div id="food" bgcolor="#ccf2ff" style="width:300px; color:#0008ff; font-family: courier new;"></div>
+        <p></p><br><br><br><br><br><br>
+        
+    <footer class="main-footer">
+				<div class="container main-footer-container">
+					<h3 class="band-name">The FinanPlan</h3>
+					<ul class="nav footer-nav">
+
+						<li>
+							<a href="https://www.youtube.com" target="_blank" class="logowebsite">
+								<img src="Images/Youtube-logo.png" class="logo">
+							</a>
+							<a href="https://www.spotify.com" target="_blank" class="logowebsite">
+								<img src="Images/Spotify-logo.png" class="logo">
+							</a>
+							<a href="https://www.facebook.com" target="_blank" class="logowebsite">
+								<img src="Images/Facebook-logo.png" class="logo">
+							</a>
+							<a href="https://www.twitter.com" target="_blank" class="logowebsite">
+				                <img src="Images/twitter-removebg-preview.png" class="logo">
+							</a>
+						</li>
+					</ul>
+                </div>
+    </footer>
+        
+    </body></center>
+</html>
