@@ -1,6 +1,8 @@
 # Bon-Voyage
 On one side, we have people who never dream because they are too afraid, and on the other side we have people who always need to live with consequences. Bon-Voyage, made for MLH hackathon, is designed for both. Bon Voyage helps you plan a vacation effectively: it will give a rough idea about whether or not your vacation is affordable. 
 
+The website calculates the cost of flight tickets and the cost of all meals to be eaten. 
+
 This website is made using HTML, JS, and CSS. 
 
 <img width="1155" alt="Screen Shot 2022-12-29 at 11 20 43 PM" src="https://user-images.githubusercontent.com/82330199/210034197-ce55656f-6947-4734-8b6f-6cce9fc81aad.png">
